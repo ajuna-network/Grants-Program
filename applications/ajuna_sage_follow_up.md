@@ -178,33 +178,75 @@ Things that shouldn’t be part of the application (see also our [FAQ](../docs/f
 
 ### Ecosystem Fit
 
-Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
+#### Where and how does your project fit into the ecosystem?
 
-- Where and how does your project fit into the ecosystem?
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-- What need(s) does your project meet?
-- How did you identify these needs? Please provide evidence in the form of (scientific) articles, forum discussions, case studies, or raw data.
-- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - If so, how is your project different? Please identify and assess any projects addressing the same need and explain how your project is distinct. Feel free to include applicable research data, statistics, or metrics.
-  - If not, please indicate why such a project might not have been possible, successful, or attempted.
-- Are there any projects similar to yours in related ecosystems?
+SAGE (State Asset Game Engine) fits directly into the **Polkadot/Substrate/Kusama ecosystem** by providing a **modular, asset-first framework** for building **fully on-chain games** and **game-like experiences**. It integrates seamlessly into the existing Substrate framework and the broader Polkadot application landscape, including the **Polkadot SDK for Unity**, creating an **easy and intuitive entry point for game developers** unfamiliar with blockchain development.
 
-- **Decentralized State Control:** All game logic and asset states live on-chain, ensuring full transparency and verifiability.
-- **Reduced Complexity for Developers:** Game developers don’t need to worry about manually tracking asset states, inventories, or player progression. Instead, they only need to define **asset transition rules** and the **conditions under which transitions are allowed**.
-- **Game-Agnostic Flexibility:** SAGE does not enforce a rigid game-specific data model. Assets can be extended with **game-independent utilities** — from generic properties (like metadata or DNA) to advanced features (like **embedded balances, staking mechanisms, or reputation scores**).
-- **Beyond Gaming:** While designed for games, this **asset-first approach** could be extended to **digital collectibles, loyalty programs, on-chain user profiles**, or **complex DeFi instruments**. By enabling assets to hold **balances or cross-game utilities**, SAGE assets could function as composable digital identities or multi-purpose in-game currencies.
+The **SAGE Playground repository** offers a **hack & play environment** that can be spun up locally in seconds, complete with **a Unity project template and a browser-based template**, allowing developers to experiment immediately without complex setup. This dramatically lowers the barrier to entry for developers interested in **on-chain gaming** on Polkadot.
 
-#### Key Developer Benefits
-- **Focus on Logic, Not Storage:** Developers only need to worry about defining **how assets transform**, rather than dealing with raw Substrate storage layouts or query logic.
-- **Flexible Asset Types:** From simple collectible cards to complex avatars with evolving DNA and embedded skills, developers can define the **types of assets** and their **valid transitions**.
-- **Free-to-Play & Anti-Sybil Options:** Developers can define **minting rules**, including free minting, paid minting, or staged minting based on player progress — with built-in **anti-farming features**.
-- **Modular Transition Engine:** The same transition logic can be re-used across **different games or products**, fostering an **ecosystem of reusable asset behaviors**.
+#### Who is your target audience?
 
-#### Future Potential
-While the initial focus of SAGE is **on-chain gaming**, its underlying **asset-state architecture** could be extended into:
-- **Programmable Loyalty Programs**: Transition-based evolution of loyalty rewards based on user activity.
-- **Composable Game Ecosystems**: Assets that retain their state and value across multiple games, creating **cross-game economies**.
-- **On-chain Digital Identities**: Assets representing players themselves, with embedded histories, achievements, and affiliations.
+The primary target audiences are:
+
+- **Parachains looking to offer gaming or asset-centric applications**.
+- **Traditional game developers** (Unity, Unreal, browser-based devs) interested in integrating on-chain asset management and progression into their games.
+- **dApp developers building applications where asset evolution, ownership, and composability are critical (beyond just gaming)**.
+
+#### What need(s) does your project meet?
+
+SAGE addresses a long-standing gap in the ecosystem: the **lack of accessible tooling for game developers** to create **on-chain games** without needing extensive Substrate, Rust, or smart contract expertise.
+
+- **Simplified Onboarding**: By providing clear examples, templates, and ready-to-use assets, game developers can get started with **on-chain game development** without needing to understand **substrate pallets** or **complex storage handling**.
+- **Asset-Centric Game Logic**: Instead of writing game logic directly in Rust or in smart contracts, developers define **how assets can transition** from state to state. This abstracts away much of the blockchain complexity.
+- **Full Lifecycle Asset Management**: Developers can **track asset states, player progression, inventories**, and **in-game economies** via on-chain transitions, all without having to manually design low-level storage solutions.
+- **Cross-Game Potential**: Assets created in one game can be **extended, evolved, or even reused across other games**, fostering interoperability within the ecosystem.
+
+#### How did you identify these needs? Please provide evidence.
+
+Our insights stem from **over three years of direct experience onboarding game developers into the Polkadot ecosystem**. Despite our own technical expertise, we encountered recurring challenges when working with **traditional game studios**. The primary obstacles included:
+
+- **Understanding Substrate’s architecture**.
+- **The need to write custom Rust code for every game mechanic**.
+- **The disconnect between game design logic (in Unity/Unreal) and blockchain state management**.
+- **The steep learning curve of blockchain-specific game logic (state transitions, storage, asset ownership, and evolution)**.
+
+Multiple projects were delayed or abandoned because **the gap between traditional game development workflows and the on-chain asset lifecycle was too wide**. This feedback, combined with internal post-mortem reviews, highlighted the need for an **abstraction layer** that allows game developers to focus on **defining asset rules** instead of wrestling with blockchain complexity.
+
+#### Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
+
+##### Similar Projects
+
+The **Awesome Ajuna Avatars** project built on some of the **core SAGE principles**, demonstrating **on-chain asset evolution**, **player progression tied to asset states**, and **embedded game mechanics on-chain**. However, this project was **highly tailored to a specific game** and lacked the flexibility to **onboard external developers** easily. The onboarding process for new teams was complicated, often requiring **direct involvement from our core technical team**.
+
+##### Key Differentiation
+
+SAGE directly addresses these limitations by:
+
+- Providing **a generalized, reusable asset transition framework** applicable across **different games and asset types**.
+- Including **pre-built templates, Unity/Browser integration**, and **a simplified local dev environment (Playground)**.
+- Focusing on **developer autonomy**, allowing **traditional game developers** to design **on-chain asset logic** without needing direct blockchain expertise.
+- Emphasizing **composability and modularity**, enabling assets to **evolve across multiple games** or **applications**.
+
+#### If not, why might such a project not have been attempted?
+
+The lack of similar projects likely stems from:
+
+- **High complexity in aligning game logic with blockchain state management**.
+- **The relative immaturity of gaming-specific tooling in the Polkadot ecosystem**.
+- **A focus on DeFi and infrastructure projects rather than user-facing game development frameworks**.
+- **A lack of structured onboarding tools for game developers** who are unfamiliar with blockchain paradigms.
+
+#### Are there any projects similar to yours in related ecosystems?
+
+At this point, we are not aware of any **comparable projects in other blockchain ecosystems** that offer:
+
+- A **fully on-chain game engine focused on asset state transitions**.
+- Direct **Unity integration** with a focus on **traditional game developer workflows**.
+- A **local playground environment for rapid prototyping**.
+
+Some ecosystems (like Flow and Immutable X) have focused on **NFT-based game assets**, but these efforts typically **focus on asset minting/trading** rather than **full asset lifecycle management with built-in state progression and game logic integration**.
+
+SAGE represents a **novel approach**, bridging **traditional game design concepts** with **on-chain asset management and game progression**, tailored specifically for Polkadot’s strengths (scalability, composability, and cross-chain compatibility).
 
 ## Team :busts_in_silhouette:
 
