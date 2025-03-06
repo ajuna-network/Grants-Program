@@ -63,7 +63,7 @@ The SAGE Game Framework is a modular engine designed for game state management u
 
 ##### Architecture Overview
 
-[![Sage Architecture WIP](../docs/sage-architecture-wip.svg)](https://raw.githubusercontent.com/ajuna-network/ajuna-pallets/refs/heads/develop/docs/sage-architecture-wip.svg)
+![Sage Architecture WIP](https://raw.githubusercontent.com/ajuna-network/ajuna-pallets/refs/heads/develop/docs/sage-architecture-wip.svg)
 
 The following Entity-Relationship (ER) diagram shows the relationships between the key entities:
 
