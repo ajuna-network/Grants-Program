@@ -49,14 +49,16 @@ The SAGE Game Framework is a modular engine designed for game state management u
 
 Each **asset** (such as a game character, item, or piece of equipment) is not just an object with a static set of properties; it carries its **current state**, such as its health, level, evolution status, or any other gameplay-relevant data. State changes (like upgrading an item, progressing a character, or resolving a battle) are processed through **state transitions** — pre-defined logical transformations that **consume and produce assets**.
 
+**Reference Implementation in C#**
+
 - **Account:**
-  Represents a player or system account. Each account is identified by a unique ID and holds a balance.
-
+  Represents a player or system account. Each account is identified by a unique ID and holds a balance. [Ref.C#](https://github.com/ajuna-network/Ajuna.SAGE/blob/master/Ajuna.SAGE.Game/Manager/AccountManager.cs)
+  
 - **Asset:**
-  The fundamental game object. Assets have an owner (`OwnerId`), a collection identifier, a score, a genesis timestamp, and a data array (often referred to as DNA) that encodes various properties using compact, bit-level operations.
-
+  The fundamental game object. Assets have an owner (`OwnerId`), a collection identifier, a score, a genesis timestamp, and a data array (often referred to as DNA) that encodes various properties using compact, bit-level operations. [Ref.C#](https://github.com/ajuna-network/Ajuna.SAGE/blob/master/Ajuna.SAGE.Game/Manager/AssettManager.cs)
+  
 - **Balance:**
-  Tracks funds for both accounts and assets. Asset-specific balances are managed separately from overall account balances.
+  Tracks funds for both accounts and assets. Asset-specific balances are managed separately from overall account balances. [Ref.C#](https://github.com/ajuna-network/Ajuna.SAGE/blob/master/Ajuna.SAGE.Game/Manager/BalanceManager.cs)
 
 - **Transition:**
   A state change operation that is defined by:
@@ -66,15 +68,15 @@ Each **asset** (such as a game character, item, or piece of equipment) is not ju
   - A **Transition Function** that computes new assets (the updated state) from the provided inputs
 
 - **Engine:**
-  The central component that manages accounts, assets, balances, and transitions. It relies on external providers (like a blockchain info provider) for block numbers and randomness.
+  The central component that manages accounts, assets, balances, and transitions. It relies on external providers (like a blockchain info provider) for block numbers and randomness. [Ref.C#](https://github.com/ajuna-network/Ajuna.SAGE/blob/master/Ajuna.SAGE.Game/Engine.cs)
+
+![image](https://github.com/user-attachments/assets/1fc850c2-bdc7-4674-9030-02c316b0b14c)
 
 ##### Architecture Overview
 
+This is the top view for the Substrate Architecture implementing the various modules for SAGE.
+
 ![Sage Architecture WIP](https://raw.githubusercontent.com/ajuna-network/ajuna-pallets/refs/heads/develop/docs/sage-architecture-wip.svg)
-
-The following Entity-Relationship (ER) diagram shows the relationships between the key entities:
-
-![image](https://github.com/user-attachments/assets/1fc850c2-bdc7-4674-9030-02c316b0b14c)
 
 ##### Technology Stack
 
