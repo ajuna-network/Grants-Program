@@ -76,44 +76,9 @@ The following Entity-Relationship (ER) diagram shows the relationships between t
 
 ![image](https://github.com/user-attachments/assets/1fc850c2-bdc7-4674-9030-02c316b0b14c)
 
-```plantuml
-@startuml ER Diagram
-entity "Account" as Account {
-  * Id : uint
-  * Balance : uint
-}
+##### Technology Stack
 
-entity "Asset" as Asset {
-  * Id : uint
-  * OwnerId : uint
-  * CollectionId : byte
-  * Score : uint
-  * Genesis : uint
-  * Data : byte[]
-}
-
-entity "Balance" as Balance {
-  * AssetId : uint
-  * BalanceValue : uint
-}
-
-entity "Transition" as Transition {
-  * Identifier : ITransitionIdentifier
-  * Rules : ITransitionRule[]
-  * Fee : ITransitioFee?
-}
-
-entity "Engine" as Engine {
-  * BlockchainInfo : IBlockchainInfoProvider
-}
-
-Account ||--o{ Asset : "owns"
-Asset ||--|{ Balance : "has"
-Engine o-- Account : "manages"
-Engine o-- Asset : "manages"
-Engine o-- Transition : "registers"
-@enduml
-```
+![image](https://github.com/user-attachments/assets/7c821bca-f4c0-4cbd-b7e8-271ab0accb36)
 
 ##### Transition Execution Flow
 
@@ -121,60 +86,17 @@ The following UML activity diagram illustrates the high-level flow of a state tr
 
 ![image](https://github.com/user-attachments/assets/5827a96b-1ef5-49a0-87ba-fb766550aef8)
 
-```plantuml
-@startuml Activity Diagram for Transition Execution
-start
+##### DEV Terminal
 
-:Account initiates transition;
-:Call Engine.Transition(identifier, assets);
-
-if (assets contain duplicates or lockable assets?) then (yes)
-  :Abort transition;
-  stop
-else (no)
-  :Verify rules via VerifyFunction;
-  if (rules NOT satisfied?) then (yes)
-    :Abort transition;
-    stop
-  else (no)
-    :Check fee requirements;
-    if (insufficient balance for fee?) then (yes)
-      :Abort transition;
-      stop
-    else (no)
-      :Withdraw fee from account balance;
-      :Execute transition function;
-      :Obtain output assets;
-      :Apply state changes (create, update, delete assets);
-      :Update balances accordingly;
-    endif
-  endif
-endif
-
-:Return success with output assets;
-stop
-@enduml
-```
+![image](https://github.com/user-attachments/assets/69d88d91-dcae-4eec-b680-3ec11c849a2e)
 
 ##### Summary
 
 By separating accounts, assets, balances, and transitions, the SAGE Game Framework provides a robust foundation for developing complex, asset-based games. Its modular design and use of state transitions make it highly adaptable for various game genres and mechanics.
 
+#### What your project is *not* or will *not* provide or implement
 
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
-- What your project is *not* or will *not* provide or implement
-  - This is a place for you to manage expectations and clarify any limitations that might not be obvious
-
-
-Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
-
-- The (future) tokenomics of your project
-- For non-infrastructure projects—deployment and hosting costs, maintenance or audits
-- Business-oriented activities (marketing, business planning), events or outreach
+This project will not provide an actual game or production-ready implementation of an application; all demos and apps are for demonstration purposes only.
 
 ### Ecosystem Fit
 
