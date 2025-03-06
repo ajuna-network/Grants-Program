@@ -16,31 +16,38 @@
 
 ## Project Overview :page_facing_up:
 
-This application is a **follow-up grant** to the previous **Ajuna Network / Jeton Network grants**, including work on the Substrate Unity SDK and gaming framework (referencing the previous Open Grants Program application).
+This application is a **follow-up grant** to the previous **Ajuna Network grants**, including work on the Substrate Unity SDK and gaming framework (referencing the previous Open Grants Program application).
+- https://github.com/w3f/Grants-Program/pull/265
+- https://github.com/w3f/Grants-Program/pull/433
 
 **Project Name:** Substrate Asset Game Engine (SAGE)
 
 **Tagline:** A modular, instanced Substrate framework for building blockchain-based games with reusable logic, asset handling, and developer-friendly tooling.
 
 **Description:**
+The **SAGE Game Framework** is a **modular and extensible game engine** designed to manage **on-chain game state** through an **asset-based, state-transition model**. Rather than maintaining complex game states in traditional off-chain databases or fragmented Substrate storage items, **SAGE embeds the game state directly within the assets themselves** — creating a self-contained, portable state system that lives entirely on-chain.
+
 SAGE is designed to reduce the complexity of building blockchain games on Substrate by providing a flexible, reusable **state machine framework** with key features:
-- Asset creation, mutation, and trading (compatible with pallet-assets/NFT standards).
+- Asset creation, mutation, trading, and nft wrapping (compatible with pallet-assets/NFT standards).
 - Generic transitions for game state progression.
 - Season, tournament, and leaderboard management.
 - Support for modular gameplay logic, with **multiple entry points** for developers to plug in game-specific logic.
-- Affiliation hooks for referral programs.
+- Free to play mechanic, and Affiliation hooks for referral programs.
 - Manager/admin roles to configure features dynamically.
-- Terminal UI and developer playground for quick testing and integration.
+- Account farming protection, with an achievement unlock feature system.
+- Terminal UI and developer playground for quick hack & play.
 
-SAGE evolved from the **Awesome Ajuna Avatars** project, currently live on **Bajun Network** and available as a mobile game ([bbb.ajuna.io](https://bbb.ajuna.io)) ([Google Play](https://play.google.com/store/apps/details?id=io.ajuna.bbb)). After experiencing high complexity onboarding other projects onto AAA, we redesigned and modularized SAGE to be the **go-to framework for future Substrate-based games**.
+SAGE evolved from the **Awesome Ajuna Avatars** project, that evolved from Bajun Network, into Big Ballz on **Ajuna Network** and available as a mobile game ([bbb.ajuna.io](https://bbb.ajuna.io)) ([Google Play](https://play.google.com/store/apps/details?id=io.ajuna.bbb)). After experiencing high complexity onboarding other projects onto AAA, we redesigned and modularized SAGE to be a **all-in one framework for future Substrate-based games**. Allowing gamedevs, to spin up a full enviroment, including a Unity template, to start develope games in seconds.
 
 ### Project Details
 
 #### SAGE Game Framework
 
-The SAGE Game Framework is a modular engine designed for game state management using an asset-based, state-transition model. Instead of using a traditional database, SAGE stores state directly on "assets" (e.g., game cards), and state changes are performed by executing transitions that consume and produce assets. This architecture allows for a flexible, decentralized, and extensible game design.
+The SAGE Game Framework is a modular engine designed for game state management using an asset-based, state-transition model. Instead of using a traditional database, SAGE stores state directly on "assets" (e.g., game cards), and state changes are performed by executing transitions that consume and produce assets. This architecture allows for a flexible, decentralized, and extensible game design. Maintainging the full utility on the Asset it self, and allowing devs to not care for the on-chain storage, but work on the actual state transitions of the assets. SAGE Framework is not limited to games, features like assets holding balances, might open for other products, that can be created which we have to figure out. Game Devs, don't need to care for a specific and game cetric datamodel, assets can hold utilities far beyond, other benefits
 
 ##### Core Concepts
+
+Each **asset** (such as a game character, item, or piece of equipment) is not just an object with a static set of properties; it carries its **current state**, such as its health, level, evolution status, or any other gameplay-relevant data. State changes (like upgrading an item, progressing a character, or resolving a battle) are processed through **state transitions** — pre-defined logical transformations that **consume and produce assets**.
 
 - **Account:**
   Represents a player or system account. Each account is identified by a unique ID and holds a balance.
@@ -181,6 +188,23 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
   - If so, how is your project different? Please identify and assess any projects addressing the same need and explain how your project is distinct. Feel free to include applicable research data, statistics, or metrics.
   - If not, please indicate why such a project might not have been possible, successful, or attempted.
 - Are there any projects similar to yours in related ecosystems?
+
+- **Decentralized State Control:** All game logic and asset states live on-chain, ensuring full transparency and verifiability.
+- **Reduced Complexity for Developers:** Game developers don’t need to worry about manually tracking asset states, inventories, or player progression. Instead, they only need to define **asset transition rules** and the **conditions under which transitions are allowed**.
+- **Game-Agnostic Flexibility:** SAGE does not enforce a rigid game-specific data model. Assets can be extended with **game-independent utilities** — from generic properties (like metadata or DNA) to advanced features (like **embedded balances, staking mechanisms, or reputation scores**).
+- **Beyond Gaming:** While designed for games, this **asset-first approach** could be extended to **digital collectibles, loyalty programs, on-chain user profiles**, or **complex DeFi instruments**. By enabling assets to hold **balances or cross-game utilities**, SAGE assets could function as composable digital identities or multi-purpose in-game currencies.
+
+#### Key Developer Benefits
+- **Focus on Logic, Not Storage:** Developers only need to worry about defining **how assets transform**, rather than dealing with raw Substrate storage layouts or query logic.
+- **Flexible Asset Types:** From simple collectible cards to complex avatars with evolving DNA and embedded skills, developers can define the **types of assets** and their **valid transitions**.
+- **Free-to-Play & Anti-Sybil Options:** Developers can define **minting rules**, including free minting, paid minting, or staged minting based on player progress — with built-in **anti-farming features**.
+- **Modular Transition Engine:** The same transition logic can be re-used across **different games or products**, fostering an **ecosystem of reusable asset behaviors**.
+
+#### Future Potential
+While the initial focus of SAGE is **on-chain gaming**, its underlying **asset-state architecture** could be extended into:
+- **Programmable Loyalty Programs**: Transition-based evolution of loyalty rewards based on user activity.
+- **Composable Game Ecosystems**: Assets that retain their state and value across multiple games, creating **cross-game economies**.
+- **On-chain Digital Identities**: Assets representing players themselves, with embedded histories, achievements, and affiliations.
 
 ## Team :busts_in_silhouette:
 
