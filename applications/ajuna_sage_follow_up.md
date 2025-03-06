@@ -53,10 +53,10 @@ Each **asset** (such as a game character, item, or piece of equipment) is not ju
 
 - **Account:**
   Represents a player or system account. Each account is identified by a unique ID and holds a balance. [Ref.C#](https://github.com/ajuna-network/Ajuna.SAGE/blob/master/Ajuna.SAGE.Game/Manager/AccountManager.cs)
-  
+
 - **Asset:**
   The fundamental game object. Assets have an owner (`OwnerId`), a collection identifier, a score, a genesis timestamp, and a data array (often referred to as DNA) that encodes various properties using compact, bit-level operations. [Ref.C#](https://github.com/ajuna-network/Ajuna.SAGE/blob/master/Ajuna.SAGE.Game/Manager/AssettManager.cs)
-  
+
 - **Balance:**
   Tracks funds for both accounts and assets. Asset-specific balances are managed separately from overall account balances. [Ref.C#](https://github.com/ajuna-network/Ajuna.SAGE/blob/master/Ajuna.SAGE.Game/Manager/BalanceManager.cs)
 
@@ -276,8 +276,8 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. See the [delivery guidelines](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines#testing-guide) for details. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.) |
-| 1. | Reference Implementation: Asset Transition Engine | Initial implementation of a reference transition engine, demonstrating minting, mutation, and asset validation in a modular manner, decoupled from any specific game logic. |
-| 2. | Feature Evaluation Report | A comprehensive evaluation of features required for a generic Substrate game engine, comparing different approaches from existing pallets (e.g., pallet-assets, pallet-uniques) and explaining which features will be included, extended, or excluded in SAGE. |
+| 1. | Reference Implementation C#: Asset Transition Engine | Initial implementation of a reference transition engine, demonstrating minting, mutation, and asset validation in a modular manner, decoupled from any specific game logic. |
+| 2. | Feature Evaluation Report | A comprehensive evaluation of features required for a generic Substrate game engine, comparing different approaches from existing pallets (e.g., ajuna-affiliates, ajuna-seasons, ajuna-tournament, ajuna-nft-transfer, pallet-nfts) and explaining which features will be included, extended, or excluded in SAGE. |
 | 3. | Modularity Design | Full design documentation covering how individual components (assets, transitions, seasons, roles, etc.) will be isolated into extensible modules, with clear extension points for custom game logic. |
 | 4. | Transition Logic PoC | 	Initial implementation of generic transition logic, demonstrating how asset minting, mutation, and seasonal changes can be triggered and validated independently of game-specific rules. |
 | 5. | API Design | Design and initial documentation for the SageApi, which will expose critical storage access and management functions for developers to plug into. |
