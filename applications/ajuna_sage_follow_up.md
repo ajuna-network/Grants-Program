@@ -80,6 +80,18 @@ This is the top view for the Substrate Architecture implementing the various mod
 
 ##### Technology Stack
 
+- **FrontEnd:**
+  - Unity (C#)
+  - Browser (Javascript)
+- **API:**
+  - PAPI
+  - Polkadot SDK for Unity
+- **Framework:**
+  - SAGE Framework (Pallets)
+- **Blockchain:**
+  - Substrate Pallets & On-chain Storage
+  - Polkadot/Kusama Consensus & Security
+
 ![image](https://github.com/user-attachments/assets/7c821bca-f4c0-4cbd-b7e8-271ab0accb36)
 
 ##### Transition Execution Flow
