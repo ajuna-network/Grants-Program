@@ -217,17 +217,18 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ## Development Status :open_book:
 
-We already started with most of the work, and have been working on it for the past six months, obviously we had to see first if the concept works, and how it plays out. We are at the stage were we think it is a very usfull framework to be used to hack and play, with the playground to attrackt future game devs into the ecosystem, the repository will be moved to Polkadot PLay, or SubstrateGaming organisation, once we are ready.
+SAGE has been under active development for the past six months. During this period, we focused on validating the core concept and building a working prototype. Today, SAGE stands as a robust hack & play framework designed to onboard game developers into the ecosystem. Once the framework reaches a more mature state, the repository will be migrated to either the Polkadot Play or SubstrateGaming organization.
 
 - **Existing repo:**
-  - (wip) C# Reference Implementation https://github.com/ajuna-network/Ajuna.SAGE
-  - (wip) Playground: https://github.com/ajuna-network/sage-playground
-  - (wip) Substrate: https://github.com/ajuna-network/ajuna-pallets/
-    - (wip) https://github.com/ajuna-network/ajuna-pallets/tree/develop/sage
+  - C# Reference Implementation (WIP): [Ajuna.SAGE](https://github.com/ajuna-network/Ajuna.SAGE)
+  - Playground (WIP): [sage-playground](https://github.com/ajuna-network/sage-playground)
+  - Substrate Pallets (WIP): [ajuna-pallets](https://github.com/ajuna-network/ajuna-pallets/)
+    → SAGE Component: [ajuna-pallets/sage]{https://github.com/ajuna-network/ajuna-pallets/tree/develop/sage)
 - **Documentation:**
-  - (wip) https://wiki.ajuna.io/build-with-us/sage-substrate-asset-game-engine
+  - Project Documentation (WIP): [SAGE Substrate Asset Game Engine](https://wiki.ajuna.io/build-with-us/sage-substrate-asset-game-engine)
 - **Previous work:**
-  - Precursor of SAGE: https://github.com/ajuna-network/ajuna-pallets/tree/develop/pallets/ajuna-awesome-avatars
+  - Precursor Project: [Awesome Avatars](https://github.com/ajuna-network/ajuna-pallets/tree/develop/pallets/ajuna-awesome-avatars)
+    This earlier initiative laid the groundwork for SAGE by exploring on-chain asset evolution and game state management.
 
 ## Development Roadmap :nut_and_bolt:
 
