@@ -1,24 +1,18 @@
 # Substrate Asset Game Engine (SAGE)
 
-> [!NOTE]
-> This document will be part of the terms and conditions of your agreement and, therefore, needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines (except for the title)! Lines starting with a `>` (such as this one) should be removed. Please use markdown instead of HTML (e.g., `![](image.png)` instead of `<img>`).
->
-> See the [Grants Program Process](https://grants.web3.foundation/docs/process) on how to submit a proposal.
-
 - **Team Name:** Ajuna Network
 - **Payment Details:**
   - **DOT**: 16AjunUasoBZKWkDnHvNEALGUgGuzC92j7LJoLu9qBSUJB2e
   - **Payment**: 16AjunUasoBZKWkDnHvNEALGUgGuzC92j7LJoLu9qBSUJB2e (USDC).
-- **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 2
-
-> [!IMPORTANT]
-> *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
+- **[Level](https://grants.web3.foundation/docs/Introduction/levels):** 3
 
 ## Project Overview :page_facing_up:
 
 This application is a **follow-up grant** to the previous **Ajuna Network grants**, including work on the Substrate Unity SDK and gaming framework (referencing the previous Open Grants Program application).
 - https://github.com/w3f/Grants-Program/pull/265
 - https://github.com/w3f/Grants-Program/pull/433
+
+### Overview
 
 **Project Name:** Substrate Asset Game Engine (SAGE)
 
@@ -186,12 +180,14 @@ SAGE represents a **novel approach**, bridging **traditional game design concept
 
 ## Team :busts_in_silhouette:
 
-- [Cedric Decoster](https://www.linkedin.com/in/cedric-decoster-3a004510b) (Solution Architect / Game Dev)
+### Team members
+
+- [Cedric Decoster](https://www.linkedin.com/in/cedric-decoster-3a004510b) (Lead / Solution Architect / Game Dev)
   A software engineer and solution architect for over 20 years and worked on enterprise applications in the Swiss banking sector. In his spare time, he has worked passionately on various blockchain and gaming projects for years. Cédric holds a bachelor’s degree in computer science. Lead Contributor of the SubstrateGaming Organisation and its flagship product the Substrate .NET API, and creative mind behind the products BattleMogs, Awesome Ajuna Avatars, Big Ballz of Bajun, DOT 4 Gravity, Hexalem (1st Polkadot Winter Hackathon ‘23), and more.
 - [Christian Langenbacher](https://www.linkedin.com/in/christian-langenbacher-baa629182) (Lead Developer, Rust)
   His background is in Electrical Engineering and Computer Sciences, which he studied at ETH Zurich. Afterwards he started to work in the field of decentralized systems at Super Computing Systems AG, a Zurich-based engineering service provider company. This is where the fundamentals of Encointer and Integritee were born around 2018, before they emerged as standalone projects. Two blockchain and TEE projects in the Polkadot ecosystem that he has been accompanying since the very beginning as core developer and engineering lead.
-- [Dídac Sementé Fernández](https://www.linkedin.com/in/d%C3%ADdac-sement%C3%A9) (Rust Developer)
-- [Niklas Plessing](https://www.linkedin.com/in/niklas-plessing-7962132a1) (Frontend & Rust Developer)
+- [Dídac Sementé Fernández](https://www.linkedin.com/in/d%C3%ADdac-sement%C3%A9) (Developer, Rust)
+- [Niklas Plessing](https://www.linkedin.com/in/niklas-plessing-7962132a1) (Developer, Frontend & Rust)
   Fullstack Developer for 15+ years, in Polkadot since 2021, PBA #2 Graduate. Have been working around different Polkadot projects. Currently rebuilding the use.ink docs and landing page, working for WagMedia. Former projects include polkadot.study, interactive study elements for the JAM Paper Tour page and a content + staking site for The Kusamarian. Find the full portfolio [here](https://eedee.net).
 
 ### Contact
@@ -207,7 +203,7 @@ SAGE represents a **novel approach**, bridging **traditional game design concept
 
 ### Team's experience
 
-The team consists of People that have been active in the Polkadot Developer Community for multiple Years, working in projects as Ajuna Network, Encointer, IntegriTEE, Polkadot Play, providing mutliple grants, but also infrastructure tool, like SDKs and APIs. Amongst the Team we have a borad experience, and qualifications reaching from PBA absolvent, Fellowship member, and Parachain Founder.
+The team consists of People that have been active in the Polkadot Developer Community for multiple Years, working in projects as Ajuna Network, Encointer, IntegriTEE, Polkadot Play, providing mutliple grants, but also infrastructure tooling, like SDKs and APIs. Amongst the Team we have a broad experience, and qualifications reaching from PBA absolvent, Fellowship member, and Parachain Founder.
 
 ### Team Code Repos
 
@@ -241,11 +237,6 @@ SAGE has been under active development for the past six months. During this peri
 
 This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/Support%20Docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe *the functionality we should expect in as much detail as possible*, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
 
-Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We *recommend* that teams structure their roadmap as 1 milestone ≈ 1 month.
-
-> [!CAUTION]
-> If any of your deliverables are based on somebody else's work, make sure you work and publish *under the terms of the license* of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Projects that submit other people's work without proper attribution will be immediately terminated.**
-
 ### Overview
 
 - **Total Estimated Duration:** 4 months
@@ -258,9 +249,6 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 - **Estimated duration:** 1 month
 - **FTE:**  2
 - **Costs:** 15'000 USD
-
-> [!NOTE]
-> **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
