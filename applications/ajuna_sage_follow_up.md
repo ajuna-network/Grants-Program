@@ -186,18 +186,18 @@ SAGE represents a **novel approach**, bridging **traditional game design concept
 
 ## Team :busts_in_silhouette:
 
-- Cedric Decoster (Solution Architect / Game Dev)
+- [Cedric Decoster](https://www.linkedin.com/in/cedric-decoster-3a004510b) (Solution Architect / Game Dev)
   A software engineer and solution architect for over 20 years and worked on enterprise applications in the Swiss banking sector. In his spare time, he has worked passionately on various blockchain and gaming projects for years. Cédric holds a bachelor’s degree in computer science. Lead Contributor of the SubstrateGaming Organisation and its flagship product the Substrate .NET API, and creative mind behind the products BattleMogs, Awesome Ajuna Avatars, Big Ballz of Bajun, DOT 4 Gravity, Hexalem (1st Polkadot Winter Hackathon ‘23), and more.
-- Christian Langenbacher (Lead Developer, Rust)
+- [Christian Langenbacher](https://www.linkedin.com/in/christian-langenbacher-baa629182) (Lead Developer, Rust)
   Major Contributor and Developer at Encointer and Integritee, building on the TEE stack, for a few years.
-- Didac (Rust Developer)
-- Niklas Plessing (Frontend & Rust Developer)
+- [Dídac Sementé Fernández](https://www.linkedin.com/in/d%C3%ADdac-sement%C3%A9) (Rust Developer)
+- [Niklas Plessing](https://www.linkedin.com/in/niklas-plessing-7962132a1) (Frontend & Rust Developer)
   Fullstack Developer for 15+ years, in Polkadot since 2021, PBA #2 Graduate. Have been working around different Polkadot projects. Currently rebuilding the use.ink docs and landing page, working for WagMedia. Former projects include polkadot.study, interactive study elements for the JAM Paper Tour page and a content + staking site for The Kusamarian. Find the full portfolio [here](https://eedee.net).
 
 ### Contact
 
 - **Contact Name:** Cedric Decoster
-- **Contact Email:** cedric.decoster@gmail.com
+- **Contact Email:** cedric@ajuna.io
 - **Website:** https://ajuna.io
 
 ### Legal Structure
@@ -207,7 +207,7 @@ SAGE represents a **novel approach**, bridging **traditional game design concept
 
 ### Team's experience
 
-The team consists of People that have been active in the Polkadot Developer Community for multiple Years, working in projects as Ajuna NEtwork, Encointer, Integritee, Polkadot Play, providing mutliple grants, but also infrastructure tool, like SDKs and APIs. We have PBA absolvent and Fellowship member, Parachain Founder.
+The team consists of People that have been active in the Polkadot Developer Community for multiple Years, working in projects as Ajuna Network, Encointer, IntegriTEE, Polkadot Play, providing mutliple grants, but also infrastructure tool, like SDKs and APIs. Amongst the Team we have a borad experience, and qualifications reaching from PBA absolvent, Fellowship member, and Parachain Founder.
 
 ### Team Code Repos
 
@@ -217,18 +217,10 @@ The team consists of People that have been active in the Polkadot Developer Comm
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- https://github.com/darkfriend77
-- https://github.com/clangenb
-- https://github.com/DidacSF
-- [https://github.com/niklasp](https://github.com/niklasp)
-
-### Team LinkedIn Profiles (if available)
-
-- https://www.linkedin.com/in/cedric-decoster-3a004510b/
-- https://www.linkedin.com/in/christian-langenbacher-baa629182
-- https://www.linkedin.com/in/d%C3%ADdac-sement%C3%A9
-- https://www.linkedin.com/{person_4}
-
+- [darkfriend77](https://github.com/darkfriend77)
+- [clangenb](https://github.com/clangenb)
+- [DidacSF](https://github.com/DidacSF)
+- [niklasp](https://github.com/niklasp)
 
 ## Development Status :open_book:
 
