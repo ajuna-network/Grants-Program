@@ -250,14 +250,14 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 
 - **Total Estimated Duration:** 4 months
 - **Full-Time Equivalent (FTE):**  2 FTE
-- **Total Costs:** 75'000 USD
+- **Total Costs:** 60'000 USD
 - **DOT %:** 50%
 
 ### Milestone 1 Reference Implementation, Solution Architecture & Modularity
 
 - **Estimated duration:** 1 month
 - **FTE:**  2
-- **Costs:** 25'000 USD
+- **Costs:** 15'000 USD
 
 > [!NOTE]
 > **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one.
@@ -280,7 +280,7 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 
 - **Estimated Duration:** 2 month
 - **FTE:**  2
-- **Costs:** 25'000 USD
+- **Costs:** 30'000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -304,7 +304,7 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 
 - **Estimated Duration:** 1 month
 - **FTE:**  2
-- **Costs:** 25'000 USD
+- **Costs:** 15'000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -323,8 +323,4 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 
 ## Future Plans
 
-Please include here
-
-- how you intend to finance the project's long-term maintenance and development,
-- how you intend to use, enhance, and promote your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
+Our major goal is to establish SAGE as a comprehensive onboarding funnel for game developers, streamlining the creation of on-chain gaming projects by leveraging existing tools such as the Polkadot SDK for Unity. In the short term, we will focus on enhancing and promoting the SAGE Framework by migrating current gaming projects—like AAA, BattleMogs, DOT4Gravity, Stardust, Big Ballz of Bajun and others—onto SAGE once it reaches production readiness. Looking ahead, our team envisions further simplifying on-chain game creation by abstracting game logic into a pseudo- or scripting language, enabling strong macros, or by enabling configuration via simple smart contracts. Additionally, we are committed to exploring use cases for SAGE beyond the gaming vertical.
