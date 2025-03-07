@@ -104,7 +104,7 @@ By separating accounts, assets, balances, and transitions, the SAGE Game Framewo
 
 #### What your project is *not* or will *not* provide or implement
 
-This project will not provide an actual game or production-ready implementation of an application; all demos and apps are for demonstration purposes only.
+This project will not provide games or apps on top of SAGE that are production-ready; all demos and apps are for demonstration purposes only.
 
 ### Ecosystem Fit
 
