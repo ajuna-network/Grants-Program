@@ -189,7 +189,7 @@ SAGE represents a **novel approach**, bridging **traditional game design concept
 - [Cedric Decoster](https://www.linkedin.com/in/cedric-decoster-3a004510b) (Solution Architect / Game Dev)
   A software engineer and solution architect for over 20 years and worked on enterprise applications in the Swiss banking sector. In his spare time, he has worked passionately on various blockchain and gaming projects for years. Cédric holds a bachelor’s degree in computer science. Lead Contributor of the SubstrateGaming Organisation and its flagship product the Substrate .NET API, and creative mind behind the products BattleMogs, Awesome Ajuna Avatars, Big Ballz of Bajun, DOT 4 Gravity, Hexalem (1st Polkadot Winter Hackathon ‘23), and more.
 - [Christian Langenbacher](https://www.linkedin.com/in/christian-langenbacher-baa629182) (Lead Developer, Rust)
-  Major Contributor and Developer at Encointer and Integritee, building on the TEE stack, for a few years.
+  His background is in Electrical Engineering and Computer Sciences, which he studied at ETH Zurich. Afterwards he started to work in the field of decentralized systems at Super Computing Systems AG, a Zurich-based engineering service provider company. This is where the fundamentals of Encointer and Integritee were born around 2018, before they emerged as standalone projects. Two blockchain and TEE projects in the Polkadot ecosystem that he has been accompanying since the very beginning as core developer and engineering lead.
 - [Dídac Sementé Fernández](https://www.linkedin.com/in/d%C3%ADdac-sement%C3%A9) (Rust Developer)
 - [Niklas Plessing](https://www.linkedin.com/in/niklas-plessing-7962132a1) (Frontend & Rust Developer)
   Fullstack Developer for 15+ years, in Polkadot since 2021, PBA #2 Graduate. Have been working around different Polkadot projects. Currently rebuilding the use.ink docs and landing page, working for WagMedia. Former projects include polkadot.study, interactive study elements for the JAM Paper Tour page and a content + staking site for The Kusamarian. Find the full portfolio [here](https://eedee.net).
@@ -203,7 +203,7 @@ SAGE represents a **novel approach**, bridging **traditional game design concept
 ### Legal Structure
 
 - **Registered Address:** Stetten SH, Switzerland
-- **Registered Legal Entity:** Bloga Tech AG
+- **Registered Legal Entity:** Bloga Tech AG (UID/MWST CHE-357.036.847)
 
 ### Team's experience
 
@@ -248,7 +248,7 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 
 ### Overview
 
-- **Total Estimated Duration:** 3 months
+- **Total Estimated Duration:** 4 months
 - **Full-Time Equivalent (FTE):**  2 FTE
 - **Total Costs:** 75'000 USD
 - **DOT %:** 50%
@@ -271,14 +271,14 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.) |
 | 1. | Reference Implementation C#: Asset Transition Engine | Initial implementation of a reference transition engine, demonstrating minting, mutation, and asset validation in a modular manner, decoupled from any specific game logic. |
 | 2. | Feature Evaluation Report | A comprehensive evaluation of features required for a generic Substrate game engine, comparing different approaches from existing pallets (e.g., ajuna-affiliates, ajuna-seasons, ajuna-tournament, ajuna-nft-transfer, pallet-nfts) and explaining which features will be included, extended, or excluded in SAGE. |
-| 3. | Modularity Design | Full design documentation covering how individual components (assets, transitions, seasons, roles, etc.) will be isolated into extensible modules, with clear extension points for custom game logic. |
-| 4. | Transition Logic PoC | 	Initial implementation of generic transition logic, demonstrating how asset minting, mutation, and seasonal changes can be triggered and validated independently of game-specific rules. |
+| 3. | Modular Design | Full design documentation covering how individual components (assets, transitions, seasons, roles, etc.) will be isolated into extensible modules, with clear extension points for custom game logic. |
+| 4. | Transition Logic PoC | Initial implementation of generic transition logic, demonstrating how asset minting, mutation, and seasonal changes can be triggered and validated independently of game-specific rules. |
 | 5. | API Design | Design and initial documentation for the SageApi, which will expose critical storage access and management functions for developers to plug into. |
-| 6. | Developer Playground Setup | Basic setup for a developer playground, where developers can simulate asset transitions and test core SAGE concepts via CLI or simple web UI. |
+| 6. | Developer Playground Setup | Basic setup for a developer playground, where developers can simulate asset transitions and test core SAGE concepts via the provided CLI or simple web UI. |
 
 ### Milestone 2 Rust Implementation & Core Framework Development
 
-- **Estimated Duration:** 1 month
+- **Estimated Duration:** 2 month
 - **FTE:**  2
 - **Costs:** 25'000 USD
 
@@ -292,10 +292,13 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | 1. | Substrate Module: Core SAGE Pallet | Implementation of the pallet-sage, including asset management, asset transitions (mint/mutate/trade), seasons, and role-based management. |
 | 2. | Substrate Module: Transition Handler | Implementation of a transition handler module, capable of processing modular transition logic (pluggable by game developers). |
 | 3. | Substrate Module: SageAPI Hooks | Implementation of the SageApi, exposing player configuration, asset lookup, seasonal data, and global game configuration methods. |
-| 4. | Storage Schema | Full storage schema, defining how assets, players, seasons, and transitions are stored and queried efficiently within the Substrate runtime. |
-| 5. | Generic Transition Library | Reusable library of common transitions (minting, merging, mutating, splitting), easily extensible for game-specific logic. |
-| 6. | Runtime Integration Example | Example Substrate runtime demonstrating how to include pallet-sage alongside other game-related pallets, with configuration examples. |
-| 7. | Playground Runtime | Deployment-ready playground runtime for testing SAGE concepts locally, preloaded with assets, seasons, and sample transitions. |
+| 4. | Substrate Module: FeeHandler | Implementation of the Fee Handler, used to implement custom fee handling, native, assets or vouchers. |
+| 5. | Substrate Module: Season | Implementation of the previous Season concept, as part of SAGE. |
+| 6. | Substrate Module: Tournament | Implementation of the previous Toruanemt concept, as part of SAGE. |
+| 7. | Substrate Module: Affiliates | Implementation of the previous Affiliates concept, as part of SAGE. |
+| 8. | Substrate Module: Treasury | Implementation of the previous Treaury concept, split up for seperate Torunament and Season handling. |
+| 9. | Runtime Integration Example | Example Substrate runtime demonstrating how to include pallet-sage alongside other game-related pallets, with configuration examples. |
+| 10. | Playground Runtime | Deployment-ready playground runtime for testing SAGE concepts locally, preloaded with assets, seasons, and sample transitions, and at least three demo games/apps. |
 
 ### Milestone 3 UI, JavaScript SDK, Unity Integration & Developer Playground
 
@@ -310,13 +313,13 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. See the [delivery guidelines](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines#testing-guide) for details. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.) |
-| 1. | JavaScript SDK | Creation of a JavaScript SDK that wraps calls to SageAPI, providing easy-to-use functions for asset lookup, transitions, and player management. |
-| 2. | Unity Integration | Sample Unity project demonstrating wallet creation, asset minting, mutation, and trading, using the JavaScript SDK to interact with the Substrate node. |
-| 3. | Developer Playground UI | Web-based developer playground where developers can visually create assets, trigger transitions, and inspect game state — backed by SageAPI and running on a local Substrate node. |
-| 4. | Playground Backend | Node.js backend for proxying Substrate RPC calls to SageAPI, with simplified endpoints for asset management and transitions (developer-friendly). |
-| 5. | CLI Tool | Simple CLI tool to simulate transitions and query asset state directly from the terminal, using the JavaScript SDK. |
-| 6. | Sample End-to-End Game Template | Basic game template (example: board game) demonstrating how developers can build fully on-chain gameplay using SAGE transitions, including backend and frontend , for browser (javascript), and mobile (unity) |
-| 7. | Workshop / Demo Video | Full recorded demo showing how to set up a Substrate node with SAGE, deploy assets, run transitions, and connect both Unity and web UIs to interact with the game state. |
+| 1. | Typescript SDK | Creation of a Typescript SDK that uses PAPI, and wraps calls to SageAPI, providing easy-to-use functions for asset lookup, transitions, and player management. |
+| 2. | C# SAGE API | C# API for SAGE, implementing storage access and extrinsic execution for sage core. |
+| 3. | Unity Integration | Sample Unity project integration, showing one demo game in UNity from the playground, including the the C# SAGE API SDK to interact with the Substrate node. |
+| 4. | Developer Playground UI | Web-based developer playground where developers can visually create assets, trigger transitions, and inspect game state — backed by SageAPI and running on a local Substrate node. |
+| 5. | CLI Tool | Simple CLI tool to simulate transitions and query asset state directly from the terminal, using the Typescript SDK. |
+| 7. | Sample End-to-End Game Template | Basic game template (example: board game) demonstrating how developers can build fully on-chain gameplay using SAGE transitions, including backend and frontend , for browser (javascript), and mobile (unity) |
+| 8. | Workshop / Demo Video | Full recorded demo showing how to set up a Substrate node with SAGE, deploy assets, run transitions, and connect both Unity and web UIs to interact with the game state. |
 
 ## Future Plans
 
