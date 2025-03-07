@@ -110,7 +110,7 @@ This project will not provide games or apps on top of SAGE that are production-r
 
 #### Where and how does your project fit into the ecosystem?
 
-SAGE (State Asset Game Engine) fits directly into the **Polkadot/Substrate/Kusama ecosystem** by providing a **modular, asset-first framework** for building **fully on-chain games** and **game-like experiences**. It integrates seamlessly into the existing Substrate framework and the broader Polkadot application landscape, including the **Polkadot SDK for Unity**, creating an **easy and intuitive entry point for game developers** unfamiliar with blockchain development.
+SAGE (Substrate Asset Game Engine) fits directly into the **Polkadot/Substrate/Kusama ecosystem** by providing a **modular, asset-first framework** for building **fully on-chain games** and **game-like experiences**. It integrates seamlessly into the existing Substrate framework and the broader Polkadot application landscape, including the **Polkadot SDK for Unity**, creating an **easy and intuitive entry point for game developers** unfamiliar with blockchain development.
 
 The **SAGE Playground repository** offers a **hack & play environment** that can be spun up locally in seconds, complete with **a Unity project template and a browser-based template**, allowing developers to experiment immediately without complex setup. This dramatically lowers the barrier to entry for developers interested in **on-chain gaming** on Polkadot.
 
@@ -129,7 +129,7 @@ SAGE addresses a long-standing gap in the ecosystem: the **lack of accessible to
 - **Simplified Onboarding**: By providing clear examples, templates, and ready-to-use assets, game developers can get started with **on-chain game development** without needing to understand **substrate pallets** or **complex storage handling**.
 - **Asset-Centric Game Logic**: Instead of writing game logic directly in Rust or in smart contracts, developers define **how assets can transition** from state to state. This abstracts away much of the blockchain complexity.
 - **Full Lifecycle Asset Management**: Developers can **track asset states, player progression, inventories**, and **in-game economies** via on-chain transitions, all without having to manually design low-level storage solutions.
-- **Cross-Game Potential**: Assets created in one game can be **extended, evolved, or even reused across other games**, fostering interoperability within the ecosystem.
+- **Cross-Game Potential**: Assets created in one game can be **extended, evolved, or even reused across other games**, for that purpose, we have integrated a NFT transfer pallet, providing a NFT wrapper solution with the pallet-nfts.
 
 #### How did you identify these needs? Please provide evidence.
 
@@ -284,9 +284,10 @@ This section should break the development roadmap down into milestones and deliv
 | 5. | Substrate Module: Season | Implementation of the previous Season concept, as part of SAGE. |
 | 6. | Substrate Module: Tournament | Implementation of the previous Toruanemt concept, as part of SAGE. |
 | 7. | Substrate Module: Affiliates | Implementation of the previous Affiliates concept, as part of SAGE. |
-| 8. | Substrate Module: Treasury | Implementation of the previous Treaury concept, split up for seperate Torunament and Season handling. |
-| 9. | Runtime Integration Example | Example Substrate runtime demonstrating how to include pallet-sage alongside other game-related pallets, with configuration examples. |
-| 10. | Playground Runtime | Deployment-ready playground runtime for testing SAGE concepts locally, preloaded with assets, seasons, and sample transitions, and at least three demo games/apps. |
+| 8. | Substrate Module: Treasury | Implementation of the previous Treaury concept, split up for separate Torunament and Season handling. |
+| 9. | Substrate Module: Transfer | NFT wrapper, mints and burns Asset from SAGE into pallet-nfts asset. Using NFT attributes to store custom values, from the SAGE asset. |
+| 10. | Runtime Integration Example | Example Substrate runtime demonstrating how to include pallet-sage alongside other game-related pallets, with configuration examples. |
+| 11. | Playground Runtime | Deployment-ready playground runtime for testing SAGE concepts locally, preloaded with assets, seasons, and sample transitions, and at least three demo games/apps. |
 
 ### Milestone 3 UI, JavaScript SDK, Unity Integration & Developer Playground
 
