@@ -191,7 +191,8 @@ SAGE represents a **novel approach**, bridging **traditional game design concept
 - Christian Langenbacher (Lead Developer, Rust)
   Major Contributor and Developer at Encointer and Integritee, building on the TEE stack, for a few years.
 - Didac (Rust Developer)
-- Niklas (Frontend & Rust Developer)
+- Niklas Plessing (Frontend & Rust Developer)
+  Fullstack Developer for 15+ years, in Polkadot since 2021, PBA #2 Graduate. Have been working around different Polkadot projects. Currently rebuilding the use.ink docs and landing page, working for WagMedia. Former projects include polkadot.study, interactive study elements for the JAM Paper Tour page and a content + staking site for The Kusamarian. Find the full portfolio [here](https://eedee.net).
 
 ### Contact
 
@@ -219,7 +220,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - https://github.com/darkfriend77
 - https://github.com/clangenb
 - https://github.com/DidacSF
-- https://github.com/niklasp
+- [https://github.com/niklasp](https://github.com/niklasp)
 
 ### Team LinkedIn Profiles (if available)
 
