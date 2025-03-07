@@ -255,16 +255,16 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 
 ### Overview
 
-- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested.
-- **DOT %:** Percentage of Total Costs to be paid in (vested) DOT (≥ 50%)
+- **Total Estimated Duration:** 3 months
+- **Full-Time Equivalent (FTE):**  2 FTE
+- **Total Costs:** 75'000 USD
+- **DOT %:** 50%
 
 ### Milestone 1 Reference Implementation, Solution Architecture & Modularity
 
 - **Estimated duration:** 1 month
 - **FTE:**  2
-- **Costs:** 25,000 USD
+- **Costs:** 25'000 USD
 
 > [!NOTE]
 > **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one.
@@ -287,7 +287,7 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 
 - **Estimated Duration:** 1 month
 - **FTE:**  2
-- **Costs:** 25,000 USD
+- **Costs:** 25'000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -307,8 +307,8 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 ### Milestone 3 UI, JavaScript SDK, Unity Integration & Developer Playground
 
 - **Estimated Duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 15'000 USD
+- **FTE:**  2
+- **Costs:** 25'000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -322,7 +322,7 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | 3. | Developer Playground UI | Web-based developer playground where developers can visually create assets, trigger transitions, and inspect game state — backed by SageAPI and running on a local Substrate node. |
 | 4. | Playground Backend | Node.js backend for proxying Substrate RPC calls to SageAPI, with simplified endpoints for asset management and transitions (developer-friendly). |
 | 5. | CLI Tool | Simple CLI tool to simulate transitions and query asset state directly from the terminal, using the JavaScript SDK. |
-| 6. | Sample Game Template | Basic game template (example: breeding game) demonstrating how developers can build fully on-chain gameplay using SAGE transitions. |
+| 6. | Sample End-to-End Game Template | Basic game template (example: board game) demonstrating how developers can build fully on-chain gameplay using SAGE transitions, including backend and frontend , for browser (javascript), and mobile (unity) |
 | 7. | Workshop / Demo Video | Full recorded demo showing how to set up a Substrate node with SAGE, deploy assets, run transitions, and connect both Unity and web UIs to interact with the game state. |
 
 ## Future Plans
@@ -332,20 +332,3 @@ Please include here
 - how you intend to finance the project's long-term maintenance and development,
 - how you intend to use, enhance, and promote your project in the short term, and
 - the team's long-term plans and intentions in relation to it.
-
-## Referral Program (optional) :moneybag:
-
-You can find more information about the program [here](https://grants.web3.foundation/docs/referral-program).
-
-- **Referrer:** Name of the Polkadot Ambassador or GitHub account of the Web3 Foundation grantee
-- **Payment Address:** Polkadot/Kusama (USDC) payment address. Please also specify the currency. (e.g. 15oF4... (USDC))
-
-## Additional Information :heavy_plus_sign:
-
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
-
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
-
-- Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
